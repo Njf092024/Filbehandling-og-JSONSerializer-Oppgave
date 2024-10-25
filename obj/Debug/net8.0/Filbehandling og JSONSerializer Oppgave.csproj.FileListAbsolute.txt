@@ -1,0 +1,15 @@
+C:\Koding\Filbehandling og JSONSerializer Oppgave\bin\Debug\net8.0\Filbehandling og JSONSerializer Oppgave.exe
+C:\Koding\Filbehandling og JSONSerializer Oppgave\bin\Debug\net8.0\Filbehandling og JSONSerializer Oppgave.deps.json
+C:\Koding\Filbehandling og JSONSerializer Oppgave\bin\Debug\net8.0\Filbehandling og JSONSerializer Oppgave.runtimeconfig.json
+C:\Koding\Filbehandling og JSONSerializer Oppgave\bin\Debug\net8.0\Filbehandling og JSONSerializer Oppgave.dll
+C:\Koding\Filbehandling og JSONSerializer Oppgave\bin\Debug\net8.0\Filbehandling og JSONSerializer Oppgave.pdb
+C:\Koding\Filbehandling og JSONSerializer Oppgave\obj\Debug\net8.0\Filbehandling og JSONSerializer Oppgave.GeneratedMSBuildEditorConfig.editorconfig
+C:\Koding\Filbehandling og JSONSerializer Oppgave\obj\Debug\net8.0\Filbehandling og JSONSerializer Oppgave.AssemblyInfoInputs.cache
+C:\Koding\Filbehandling og JSONSerializer Oppgave\obj\Debug\net8.0\Filbehandling og JSONSerializer Oppgave.AssemblyInfo.cs
+C:\Koding\Filbehandling og JSONSerializer Oppgave\obj\Debug\net8.0\Filbehandling og JSONSerializer Oppgave.csproj.CoreCompileInputs.cache
+C:\Koding\Filbehandling og JSONSerializer Oppgave\obj\Debug\net8.0\Filbehandling og JSONSerializer Oppgave.sourcelink.json
+C:\Koding\Filbehandling og JSONSerializer Oppgave\obj\Debug\net8.0\Filbehandling og JSONSerializer Oppgave.dll
+C:\Koding\Filbehandling og JSONSerializer Oppgave\obj\Debug\net8.0\refint\Filbehandling og JSONSerializer Oppgave.dll
+C:\Koding\Filbehandling og JSONSerializer Oppgave\obj\Debug\net8.0\Filbehandling og JSONSerializer Oppgave.pdb
+C:\Koding\Filbehandling og JSONSerializer Oppgave\obj\Debug\net8.0\Filbehandling og JSONSerializer Oppgave.genruntimeconfig.cache
+C:\Koding\Filbehandling og JSONSerializer Oppgave\obj\Debug\net8.0\ref\Filbehandling og JSONSerializer Oppgave.dll
