@@ -7,6 +7,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        
+        try
+        {
+            Console.WriteLine("");
+        }
+        catch(Exception exception)
+        {
+            Console.WriteLine($"{exception.Message}\n");
+        }
     }
 }
