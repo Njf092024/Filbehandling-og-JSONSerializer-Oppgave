@@ -19,6 +19,8 @@ class Program
                 Console.WriteLine("There was error with the data submitted, please input your age using numbers.");
                 ageInput = Console.ReadLine();
             }
+            Console.WriteLine("What city are you from?");
+            string? city = Console.ReadLine();
         }
         catch(Exception exception)
         {
