@@ -11,6 +11,17 @@ class Program
         {
             Console.WriteLine("what is your name?");
             string? name = Console.ReadLine();
+            Console.WriteLine("What is your level?");
+            string? LevelInput = Console.ReadLine();
+            int level;
+            while(!int.TryParse(LevelInput, out level))
+            {
+                Console.WriteLine("There was an error with the input");
+                LevelInput = Console.ReadLine();
+            }
+
+
+
             Console.WriteLine("How old are you?");
             string? ageInput = Console.ReadLine();
             int age;
@@ -26,8 +37,9 @@ class Program
                 Name = name,
                 Age = age,
                 City = city,
+                Level = level,
             };
-            Console.WriteLine($"Your name is: {person.Name} and you are {person.Age} old. And you reside in {person.City}");
+            Console.WriteLine($"Your name is: {person.Name} and you are {person.Age} old. You reside in {person.City}, and your level is {person.Level}.");
 
             string json = JsonSerializer.Serialize(person, new JsonSerializerOptions { WriteIndented =  true });
 
