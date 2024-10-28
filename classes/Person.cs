@@ -1,6 +1,6 @@
 public class Person
 {
-    public string? name { get; set; }
-    public string? age { get; set; }
-    public string? city { get; set; }
+    public string? Name { get; set; }
+    public string? Age { get; set; }
+    public string? City { get; set; }
 }

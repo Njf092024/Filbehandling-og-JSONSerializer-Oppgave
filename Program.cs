@@ -21,6 +21,12 @@ class Program
             }
             Console.WriteLine("What city are you from?");
             string? city = Console.ReadLine();
+            var person = new Person 
+            {
+                Name = name,
+                Age = age,
+                City = city,
+            };
         }
         catch(Exception exception)
         {
