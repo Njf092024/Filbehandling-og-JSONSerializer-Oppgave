@@ -28,6 +28,8 @@ class Program
                 City = city,
             };
             Console.WriteLine($"Your name is: {person.Name} and you are {person.Age} old. And you reside in {person.City}");
+
+            string json = JsonSerializer.Serialize(person, new JsonSerializerOptions { WriteIndented =  true });
         }
         catch(Exception exception)
         {
