@@ -30,6 +30,16 @@ class Program
             Console.WriteLine($"Your name is: {person.Name} and you are {person.Age} old. And you reside in {person.City}");
 
             string json = JsonSerializer.Serialize(person, new JsonSerializerOptions { WriteIndented =  true });
+
+            string filePath = "person.json";
+            File.WriteAllText(filePath, json);
+
+            Console.WriteLine("Data was succesfully written to the JSON object!");
+        }
+
+        catch(IOException exception)
+        {
+            Console.WriteLine($"An error occured while attempting to write to the file person.json: {exception.Message}");
         }
         catch(Exception exception)
         {
