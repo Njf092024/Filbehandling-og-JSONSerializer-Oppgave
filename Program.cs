@@ -14,7 +14,7 @@ class Program
             List<Person>? people = new List<Person>();
             if (File.Exists(filePath))
             {
-                string exisitingJSON = File.ReadAllText(filePath);
+                string? exisitingJSON = File.ReadAllText(filePath);
                 Console.WriteLine($"Data already exists within the file person.json {File.ReadAllText(filePath)}");
                 if(!string.IsNullOrWhiteSpace(exisitingJSON))
                 {
@@ -47,16 +47,17 @@ class Program
             }
             Console.WriteLine("What city are you from?");
             string? city = Console.ReadLine();
-            var person = new Person 
+            var newPerson = new Person 
             {
                 Name = name,
                 Age = age,
                 City = city,
                 Level = level,
             };
-            Console.WriteLine($"Your name is: {person.Name} and you are {person.Age} old. You reside in {person.City}, and your level is {person.Level}");
+            people.Add(newPerson);
+            Console.WriteLine($"Your name is: {newPerson.Name} and you are {newPerson.Age} old. You reside in {newPerson.City}, and your level is {newPerson.Level}");
 
-            string json = JsonSerializer.Serialize(person, new JsonSerializerOptions { WriteIndented =  true });
+            string json = JsonSerializer.Serialize(people, new JsonSerializerOptions { WriteIndented =  true });
 
             File.WriteAllText(filePath, json);
 

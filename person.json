@@ -1,6 +1,14 @@
-{
-  "Name": "Fadi",
-  "Age": 28,
-  "City": "Bergen",
-  "Level": 9000
-}
+[
+  {
+    "Name": "Fadi",
+    "Age": 28,
+    "City": "Bergen",
+    "Level": 9000
+  },
+  {
+    "Name": "Estarossa",
+    "Age": 3000,
+    "City": "Demon realm",
+    "Level": 100
+  }
+]
