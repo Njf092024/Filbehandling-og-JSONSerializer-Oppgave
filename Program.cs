@@ -10,6 +10,8 @@ class Program
         try
         {
             string filePath = "person.json";
+
+            List<Person> people = new List<Person>();
             
             Console.WriteLine("what is your name?");
             string? name = Console.ReadLine();
