@@ -12,6 +12,11 @@ class Program
             string filePath = "person.json";
 
             List<Person> people = new List<Person>();
+            if (File.Exists(filePath))
+            {
+                string existingJSON = File.ReadAllText(filePath);
+                
+            }
             
             Console.WriteLine("what is your name?");
             string? name = Console.ReadLine();
