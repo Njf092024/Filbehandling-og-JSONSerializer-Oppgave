@@ -9,6 +9,8 @@ class Program
     {
         try
         {
+            string filePath = "person.json";
+            
             Console.WriteLine("what is your name?");
             string? name = Console.ReadLine();
             Console.WriteLine("What is your level?");
@@ -39,11 +41,10 @@ class Program
                 City = city,
                 Level = level,
             };
-            Console.WriteLine($"Your name is: {person.Name} and you are {person.Age} old. You reside in {person.City}, and your level is {person.Level}.");
+            Console.WriteLine($"Your name is: {person.Name} and you are {person.Age} old. You reside in {person.City}, and your level is {person.Level}");
 
             string json = JsonSerializer.Serialize(person, new JsonSerializerOptions { WriteIndented =  true });
 
-            string filePath = "person.json";
             File.WriteAllText(filePath, json);
 
             Console.WriteLine("Data was succesfully written to the JSON object!");
