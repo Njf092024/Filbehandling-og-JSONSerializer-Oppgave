@@ -21,7 +21,6 @@ class Program
                     people = JsonSerializer.Deserialize<List<Person>>(exisitingJSON);
                 }
 
-                
             }
             
             Console.WriteLine("what is your name?");
@@ -34,8 +33,6 @@ class Program
                 Console.WriteLine("There was an error with the input");
                 LevelInput = Console.ReadLine();
             }
-
-
 
             Console.WriteLine("How old are you?");
             string? ageInput = Console.ReadLine();
