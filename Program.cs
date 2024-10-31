@@ -18,6 +18,7 @@ class Program
                 Console.WriteLine("Main menu");
                 Console.WriteLine(" Add a new character");
                 Console.WriteLine(" List all characters");
+                Console.WriteLine(" Exit");
             }
 
             List<Person>? people = new List<Person>();
