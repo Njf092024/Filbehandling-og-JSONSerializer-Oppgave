@@ -103,5 +103,14 @@ class Program
     static void AddNewCharacter(string filePath)
     {
         List<Person> people = new List<Person>();
+
+        if (File.Exists(filePath))
+        {
+            string? existingJSON = File.ReadAllText(filePath);
+            if (!string.IsNullOrWhiteSpace(existingJSON))
+            {
+                people = JsonSerializer.Deserialize<List<Person>>(existingJSON) ?? new List<Person>();
+            }
+        }
     }
 }
