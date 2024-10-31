@@ -20,6 +20,13 @@ class Program
                 Console.WriteLine(" List all characters");
                 Console.WriteLine(" Exit");
                 Console.Write("Choose an option: ");
+
+                switch (Console.ReadLine())
+                {
+                    case "1":
+                    AddNewCharacter(filePath);
+                    break;
+                }
             }
 
             List<Person>? people = new List<Person>();
