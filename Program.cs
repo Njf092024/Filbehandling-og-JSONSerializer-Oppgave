@@ -10,6 +10,7 @@ class Program
         try
         {
             string filePath = "person.json";
+            bool exit = false;
 
             List<Person>? people = new List<Person>();
             if (File.Exists(filePath))
