@@ -26,6 +26,17 @@ class Program
                     case "1":
                     AddNewCharacter(filePath);
                     break;
+                    case "2":
+                    ListAllCharacters(filePath);
+                    break;
+                    case "3":
+                    exit = true;
+                    Console.WriteLine("Exiting program...");
+                    break;
+                    default:
+                    Console.WriteLine("Invalid choice. Press any key to try again.");
+                    Console.ReadKey();
+                    break;
                 }
             }
 
