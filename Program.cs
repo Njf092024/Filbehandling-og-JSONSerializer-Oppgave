@@ -15,6 +15,7 @@ class Program
             while (!exit)
             {
                 Console.Clear();
+                Console.WriteLine("Main menu");
             }
 
             List<Person>? people = new List<Person>();
