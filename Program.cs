@@ -52,6 +52,31 @@ class Program
 
             }
             
+        }
+
+        catch(IOException exception)
+        {
+            Console.WriteLine($"An error occured while attempting to write to the file person.json: {exception.Message}");
+        }
+        catch(Exception exception)
+        {
+            Console.WriteLine($"{exception.Message}\n");
+        }
+    }
+
+    static void AddNewCharacter(string filePath)
+    {
+        List<Person> people = new List<Person>();
+
+        if (File.Exists(filePath))
+        {
+            string? existingJSON = File.ReadAllText(filePath);
+            if (!string.IsNullOrWhiteSpace(existingJSON))
+            {
+                people = JsonSerializer.Deserialize<List<Person>>(existingJSON) ?? new List<Person>();
+            }
+        }
+
             Console.WriteLine("what is your name?");
             string? name = Console.ReadLine();
             Console.WriteLine("What is your level?");
@@ -88,29 +113,5 @@ class Program
             File.WriteAllText(filePath, json);
 
             Console.WriteLine("Data was succesfully written to the JSON object!");
-        }
-
-        catch(IOException exception)
-        {
-            Console.WriteLine($"An error occured while attempting to write to the file person.json: {exception.Message}");
-        }
-        catch(Exception exception)
-        {
-            Console.WriteLine($"{exception.Message}\n");
-        }
-    }
-
-    static void AddNewCharacter(string filePath)
-    {
-        List<Person> people = new List<Person>();
-
-        if (File.Exists(filePath))
-        {
-            string? existingJSON = File.ReadAllText(filePath);
-            if (!string.IsNullOrWhiteSpace(existingJSON))
-            {
-                people = JsonSerializer.Deserialize<List<Person>>(existingJSON) ?? new List<Person>();
-            }
-        }
     }
 }
