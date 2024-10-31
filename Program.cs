@@ -99,4 +99,9 @@ class Program
             Console.WriteLine($"{exception.Message}\n");
         }
     }
+
+    static void AddNewCharacter(string filePath)
+    {
+        List<Person> people = new List<Person>();
+    }
 }
