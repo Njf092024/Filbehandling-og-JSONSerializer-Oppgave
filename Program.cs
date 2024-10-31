@@ -114,4 +114,6 @@ class Program
 
             Console.WriteLine("Data was succesfully written to the JSON object!");
     }
+
+    static void ListAllCharacters(string filePath);
 }
