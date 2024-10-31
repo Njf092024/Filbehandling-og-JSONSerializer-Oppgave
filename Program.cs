@@ -13,6 +13,9 @@ class Program
             bool exit = false;
 
             while (!exit)
+            {
+                Console.Clear();
+            }
 
             List<Person>? people = new List<Person>();
             if (File.Exists(filePath))
