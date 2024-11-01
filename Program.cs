@@ -13,7 +13,7 @@ class Program
             bool exit = false;
 
             while (!exit)
-            {
+            { // Eirik ga meg insipirasjon for menyen, men sliter med å få menyen til å displaye skikkelig
                 Console.Clear();
                 Console.WriteLine("Main menu");
                 Console.WriteLine("1. Add a new character");
