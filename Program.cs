@@ -113,10 +113,12 @@ class Program
             File.WriteAllText(filePath, json);
 
             Console.WriteLine("Data was succesfully written to the JSON object!");
+            
     }
 
     static void ListAllCharacters(string filePath)
     {
+    Console.Clear();
     Console.WriteLine("ListAllCharacters method called"); 
 
     if (File.Exists(filePath))
