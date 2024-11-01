@@ -115,5 +115,28 @@ class Program
             Console.WriteLine("Data was succesfully written to the JSON object!");
     }
 
-    static void ListAllCharacters(string filePath);
+    static void ListAllCharacters(string filePath)
+    {
+        if (File.Exists(filePath))
+        {
+            string? exisitingJSON = File.ReadAllText(filePath);
+            if (!string.IsNullOrWhiteSpace(exisitingJSON))
+            {
+                List<Person> people = JsonSerializer.Deserialize<List<Person>>(exisitingJSON) ?? new List<Person>();
+                Console.WriteLine("List of characters:");
+                foreach (var person in people)
+                {
+                    Console.WriteLine($"Name: {person.Name}, Age: {person.Age}, City: {person.City}, Level: {person.Level}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("No characters found.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("File not found.");
+        }
+        }
 }
