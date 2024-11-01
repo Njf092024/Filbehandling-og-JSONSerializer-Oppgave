@@ -113,7 +113,8 @@ class Program
             File.WriteAllText(filePath, json);
 
             Console.WriteLine("Data was succesfully written to the JSON object!");
-            
+            Console.WriteLine("Press any key to return to the main menu...");
+
     }
 
     static void ListAllCharacters(string filePath)
