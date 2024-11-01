@@ -66,6 +66,7 @@ class Program
 
     static void AddNewCharacter(string filePath)
     {
+        Console.Clear();
         List<Person> people = new List<Person>();
 
         if (File.Exists(filePath))
