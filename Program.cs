@@ -16,9 +16,9 @@ class Program
             {
                 Console.Clear();
                 Console.WriteLine("Main menu");
-                Console.WriteLine(" Add a new character");
-                Console.WriteLine(" List all characters");
-                Console.WriteLine(" Exit");
+                Console.WriteLine("1. Add a new character");
+                Console.WriteLine("2. List all characters");
+                Console.WriteLine("3. Exit");
                 Console.Write("Choose an option: ");
 
                 switch (Console.ReadLine())
