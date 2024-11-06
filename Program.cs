@@ -24,12 +24,16 @@ class Program
                 switch (Console.ReadLine())
                 {
                     case "1":
+                    Console.Clear();
                     AddNewCharacter(filePath);
                     break;
                     case "2":
+                    Console.Clear();
                     ListAllCharacters(filePath);
                     break;
                     case "3":
+                    Console.Clear();
+                    
                     exit = true;
                     Console.WriteLine("Exiting program...");
                     break;
