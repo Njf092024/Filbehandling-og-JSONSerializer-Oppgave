@@ -154,7 +154,8 @@ class Program
     else
     {
         Console.WriteLine("File not found.");
-        Console.ReadKey();
+        
     }
+        Console.ReadKey();
 }
 }
